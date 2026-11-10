@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conecta Escola | Educação Digital</title>
+<meta name="description" content="Projecto educativo sobre a influência das redes sociais no desempenho escolar.">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+
+:root{
+--navy:#0b1830;
+--blue:#1768c5;
+--cyan:#37d4df;
+--white:#fff;
+--light:#f2f6fc;
+--text:#24334a;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:var(--light);
+color:var(--text);
+line-height:1.7;
+}
+
+header{
+background:var(--navy);
+color:white;
+padding:18px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{font-size:23px;font-weight:900}
+.logo span{color:var(--cyan)}
+
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:var(--cyan)}
+
+.hero{
+min-height:570px;
+display:flex;
+align-items:center;
+padding:80px 8%;
+color:white;
+background:linear-gradient(90deg,rgba(5,17,39,.96),rgba(5,17,39,.48)),
+url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1600') center/cover;
+}
+
+.hero-content{max-width:720px}
+.hero small{color:var(--cyan);font-weight:bold;letter-spacing:3px}
+.hero h1{font-size:clamp(38px,6vw,65px);line-height:1.15;margin:20px 0}
+.hero p{font-size:18px;color:#e2eaf5}
+
+.btn{
+display:inline-block;
+padding:14px 25px;
+background:var(--cyan);
+color:#08213d;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin-top:25px;
+transition:.3s;
+border:0;
+cursor:pointer;
+}
+
+.btn:hover{transform:translateY(-3px);background:white}
+
+.container{max-width:1150px;margin:auto;padding:75px 22px}
+
+.heading{text-align:center;margin-bottom:40px}
+.heading small{color:var(--blue);font-weight:bold;letter-spacing:2px}
+.heading h2{font-size:34px;color:var(--navy);margin:8px 0}
+.heading p{color:#6b7b90}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{width:100%;border-radius:18px}
+.about h2{font-size:35px;color:var(--navy);margin-bottom:15px}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:23px;
+}
+
+.card{
+background:white;
+border-radius:16px;
+padding:27px;
+box-shadow:0 7px 25px rgba(15,40,80,.07);
+transition:.3s;
+}
+
+.card:hover{transform:translateY(-6px)}
+.card h3{color:var(--blue);margin:12px 0}
+.icon{font-size:35px}
+
+.banner{
+background:linear-gradient(120deg,#102c54,#1768c5);
+color:white;
+text-align:center;
+padding:65px 20px;
+}
+.banner h2{font-size:32px}
+
+.split{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+}
+
+.positive{border-top:5px solid #16aa83}
+.negative{border-top:5px solid #e16b6b}
+
+ul{padding-left:20px}
+li{margin:8px 0}
+
+.tip{
+background:white;
+padding:22px;
+margin:15px 0;
+border-left:5px solid var(--cyan);
+border-radius:10px;
+}
+
+.tool{
+background:white;
+padding:30px;
+border-radius:16px;
+box-shadow:0 5px 25px rgba(0,0,0,.06);
+}
+
+input[type=number]{
+width:100%;
+padding:14px;
+border:1px solid #ccd8e6;
+border-radius:8px;
+margin:12px 0;
+}
+
+.result{
+margin-top:20px;
+padding:20px;
+background:#eaf5ff;
+border-radius:10px;
+}
+
+.question{padding:18px 0;border-bottom:1px solid #ddd}
+.question label{display:block;margin:8px 0}
+
+footer{
+background:#09172c;
+color:white;
+text-align:center;
+padding:45px 20px;
+}
+
+footer span{color:var(--cyan)}
+
+@media(max-width:700px){
+header{flex-direction:column;gap:15px}
+nav{justify-content:center;gap:13px}
+.hero{min-height:520px;padding:65px 7%}
+.about,.split{grid-template-columns:1fr}
+.container{padding:55px 18px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">CONECTA<span> ESCOLA.</span></div>
+<nav>
+<a href="#inicio">Início</a>
+<a href="#sobre">Sobre</a>
+<a href="#impactos">Impactos</a>
+<a href="#solucoes">Soluções</a>
+<a href="#participar">Participar</a>
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+<div class="hero-content">
+<small>PROJECTO EDUCATIVO DIGITAL</small>
+<h1>O mundo digital também influencia o teu futuro.</h1>
+<p>Descobre como as redes sociais podem transformar a aprendizagem, a concentração e o desempenho escolar.</p>
+<a href="#sobre" class="btn">Descobrir o projecto →</a>
+</div>
+</section>
+
+<section class="container" id="sobre">
+<div class="about">
+<div>
+<div class="heading" style="text-align:left">
+<small>CONHECE O PROJECTO</small>
+<h2>Sobre o Conecta Escola</h2>
+</div>
+<p>As redes sociais fazem parte da vida de milhões de estudantes. São ferramentas que permitem comunicar, aprender e partilhar conhecimentos.</p>
+<p>Porém, a utilização excessiva ou inadequada pode prejudicar a concentração, a organização do tempo e as actividades escolares.</p>
+<p>O Conecta Escola pretende sensibilizar os estudantes para uma utilização consciente, equilibrada e responsável das plataformas digitais.</p>
+</div>
+<img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=900" alt="Estudantes numa sala de aula">
+</div>
+</section>
+
+<section class="container">
+<div class="heading">
+<small>O QUE PRETENDEMOS</small>
+<h2>Objectivos do projecto</h2>
+<p>Conhecimento e responsabilidade para uma melhor educação.</p>
+</div>
+
+<div class="cards">
+<div class="card"><div class="icon">🎯</div><h3>Objectivo geral</h3><p>Analisar a influência das redes sociais no desempenho escolar dos estudantes.</p></div>
+<div class="card"><div class="icon">🔍</div><h3>Identificação</h3><p>Identificar os principais benefícios e riscos da utilização das redes sociais.</p></div>
+<div class="card"><div class="icon">📚</div><h3>Investigação</h3><p>Compreender a relação entre hábitos digitais e aprendizagem.</p></div>
+<div class="card"><div class="icon">💡</div><h3>Soluções</h3><p>Apresentar medidas práticas para melhorar os hábitos digitais.</p></div>
+</div>
+</section>
+
+<section class="banner">
+<h2>A tecnologia deve ajudar-te a aprender!</h2>
+<p>Utiliza as redes sociais com inteligência e responsabilidade.</p>
+</section>
+
+<section class="container" id="impactos">
+<div class="heading">
+<small>DOIS LADOS DA TECNOLOGIA</small>
+<h2>Impactos das redes sociais</h2>
+<p>Conhece as vantagens e os desafios.</p>
+</div>
+
+<div class="split">
+<div class="card positive">
+<div class="icon">✅</div>
+<h3>Influências positivas</h3>
+<ul>
+<li>Facilitam a comunicação entre estudantes.</li>
+<li>Permitem partilhar materiais escolares.</li>
+<li>Disponibilizam conteúdos educativos.</li>
+<li>Promovem a aprendizagem colaborativa.</li>
+<li>Desenvolvem competências digitais.</li>
+</ul>
+</div>
+
+<div class="card negative">
+<div class="icon">⚠️</div>
+<h3>Influências negativas</h3>
+<ul>
+<li>Podem provocar distracções.</li>
+<li>Podem reduzir o tempo de estudo.</li>
+<li>Podem incentivar a procrastinação.</li>
+<li>Podem prejudicar a concentração.</li>
+<li>Podem expor os alunos à desinformação.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="container">
+<div class="heading">
+<small>COMPREENDER O PROBLEMA</small>
+<h2>Causas e consequências</h2>
+</div>
+<div class="cards">
+<div class="card"><div class="icon">📱</div><h3>Uso excessivo</h3><p>Dedicar demasiado tempo às redes sociais pode retirar tempo às actividades escolares.</p></div>
+<div class="card"><div class="icon">🔔</div><h3>Notificações</h3><p>Interrupções constantes podem dificultar a concentração durante os estudos.</p></div>
+<div class="card"><div class="icon">⏰</div><h3>Má gestão do tempo</h3><p>A falta de organização pode provocar atrasos na realização dos trabalhos.</p></div>
+</div>
+</section>
+
+<section class="container" id="solucoes">
+<div class="heading">
+<small>TRANSFORMAR HÁBITOS</small>
+<h2>Soluções e prevenção</h2>
+<p>Medidas para uma utilização mais saudável da tecnologia.</p>
+</div>
+<div class="tip">📚 <strong>Organizar os estudos:</strong> estabelecer horários para estudar e utilizar as redes sociais.</div>
+<div class="tip">🔕 <strong>Reduzir distracções:</strong> silenciar notificações durante os estudos.</div>
+<div class="tip">🎓 <strong>Aprender online:</strong> acompanhar páginas e conteúdos educativos.</div>
+<div class="tip">👨‍👩‍👧 <strong>Orientação:</strong> procurar apoio de professores e encarregados de educação.</div>
+<div class="tip">⚖️ <strong>Equilíbrio:</strong> reservar tempo para estudar, descansar e conviver.</div>
+</section>
+
+<section class="container">
+<div class="heading">
+<small>FERRAMENTA EDUCATIVA</small>
+<h2>Calculadora de tempo digital</h2>
+<p>Calcula quanto tempo dedicas às redes sociais.</p>
+</div>
+<div class="tool">
+<label for="hours">Horas de utilização por dia:</label>
+<input type="number" id="hours" min="0" max="24" step="0.5" placeholder="Exemplo: 3">
+<button class="btn" onclick="calculate()">Calcular tempo</button>
+<div class="result" id="calculation">O resultado aparecerá aqui.</div>
+</div>
+</section>
+
+<section class="container" id="participar">
+<div class="heading">
+<small>A TUA PARTICIPAÇÃO É IMPORTANTE</small>
+<h2>Questionário educativo</h2>
+<p>Responde às perguntas e reflecte sobre os teus hábitos digitais.</p>
+</div>
+
+<div class="tool">
+<form id="quiz">
+<div class="question">
+<strong>1. Utilizas redes sociais enquanto estudas?</strong>
+<label><input type="radio" name="q1" value="1" required> Sim</label>
+<label><input type="radio" name="q1" value="0"> Não</label>
+</div>
+<div class="question">
+<strong>2. Utilizas as redes para aprender?</strong>
+<label><input type="radio" name="q2" value="1" required> Sim</label>
+<label><input type="radio" name="q2" value="0"> Não</label>
+</div>
+<div class="question">
+<strong>3. Organizas o teu tempo de estudo?</strong>
+<label><input type="radio" name="q3" value="1" required> Sim</label>
+<label><input type="radio" name="q3" value="0"> Não</label>
+</div>
+<div class="question">
+<strong>4. Consideras importante controlar o tempo online?</strong>
+<label><input type="radio" name="q4" value="1" required> Sim</label>
+<label><input type="radio" name="q4" value="0"> Não</label>
+</div>
+<button class="btn" type="submit">Ver resultado</button>
+</form>
+<div class="result" id="quiz-result" aria-live="polite">As tuas respostas aparecerão aqui.</div>
+</div>
+</section>
+
+<section class="container">
+<div class="heading">
+<small>MENSAGEM À COMUNIDADE</small>
+<h2>As nossas recomendações</h2>
+</div>
+<div class="cards">
+<div class="card"><div class="icon">👨‍🎓</div><h3>Estudantes</h3><p>Utilizem as redes sociais com responsabilidade e priorizem a aprendizagem.</p></div>
+<div class="card"><div class="icon">👩‍🏫</div><h3>Professores</h3><p>Incentivem a utilização das tecnologias como ferramentas educativas.</p></div>
+<div class="card"><div class="icon">👪</div><h3>Encarregados</h3><p>Acompanhem e orientem os hábitos digitais dos estudantes.</p></div>
+<div class="card"><div class="icon">🏫</div><h3>Escola</h3><p>Promova actividades de sensibilização sobre cidadania digital.</p></div>
+</div>
+</section>
+
+<section class="container">
+<div class="heading">
+<small>REFLEXÃO FINAL</small>
+<h2>Conclusão</h2>
+</div>
+<div class="card">
+<p>As redes sociais apresentam oportunidades e desafios para o desempenho escolar. A sua influência depende da forma como são utilizadas pelos estudantes.</p>
+<p>É importante promover hábitos digitais equilibrados, incentivar a aprendizagem e sensibilizar a comunidade escolar para o uso responsável da tecnologia.</p>
+</div>
+</section>
+
+<section class="container">
+<div class="heading">
+<small>FONTES DE CONSULTA</small>
+<h2>Referências bibliográficas</h2>
+</div>
+<div class="card">
+<p><a href="https://www.unesco.org/en/digital-education" target="_blank">UNESCO — Educação digital</a></p>
+<p><a href="https://www.unicef.org/globalinsight" target="_blank">UNICEF — Crianças e mundo digital</a></p>
+<p><a href="https://www.who.int/health-topics/adolescent-health" target="_blank">Organização Mundial da Saúde — Saúde dos adolescentes</a></p>
+<p>Nota: consultar e identificar os documentos específicos utilizados na investigação.</p>
+</div>
+</section>
+
+<footer>
+<h2>CONECTA<span> ESCOLA.</span></h2>
+<p>Educação, tecnologia e responsabilidade.</p>
+<p>Projecto escolar | 2026</p>
+<p>© Conecta Escola — Todos os direitos reservados.</p>
+</footer>
+
+<script>
+function calculate(){
+const value=document.getElementById("hours").value;
+const result=document.getElementById("calculation");
+const hours=Number(value);
+if(value==="" || hours<0 || hours>24){
+result.textContent="Introduz um valor válido entre 0 e 24 horas.";
+return;
+}
+result.textContent="Utilizas as redes sociais aproximadamente "+(hours*7)+" horas por semana. Reflecte sobre o equilíbrio entre o tempo online e os estudos.";
+}
+
+document.getElementById("quiz").addEventListener("submit",function(e){
+e.preventDefault();
+const data=new FormData(this);
+const result=document.getElementById("quiz-result");
+const answers=[1,2,3,4].map(i=>data.get("q"+i));
+const score=answers.filter(x=>x==="1").length;
+let message="";
+if(score>=3)message="Excelente reflexão! Demonstras hábitos positivos em várias áreas. Continua a melhorar o teu equilíbrio digital.";
+else if(score===2)message="Estás no caminho certo! Procura melhorar a organização do tempo e a utilização das redes sociais.";
+else message="É uma boa oportunidade para rever os teus hábitos digitais e desenvolver estratégias de estudo.";
+result.textContent="Respondeste a todas as perguntas. "+message;
+});
+</script>
+
+</body>
+</html>
